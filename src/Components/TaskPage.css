@@ -1,0 +1,36 @@
+.picture {
+  display: block;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+.container {
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.card-checkbox {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  margin-right: 0.5rem;
+}
+.card-addtask {
+  background-color: aqua;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
