@@ -5,6 +5,7 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Typography } from "@mui/material";
 
 const Form = (props) => {
   const Navigate = useNavigate();
@@ -43,6 +44,7 @@ const Form = (props) => {
   };
   return (
     <>
+      <Typography> Your Taskboard App </Typography>
       <div className="inputfield">
         <Box
           sx={{
