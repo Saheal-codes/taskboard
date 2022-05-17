@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { Typography } from "@mui/material";
 
 const Form = (props) => {
   const Navigate = useNavigate();
@@ -28,10 +27,6 @@ const Form = (props) => {
     if (form.Password !== form.ConfirmPassword) {
       alert("Password does not match");
     }
-    // if (!document.getElementsByClassName("inputfield")[0].checkValidity()) {
-    //   document.getElementsByClassName("inputfield")[0].reportValidity();
-    //   return;
-    // }
     axios
       .post("http://localhost:80/registeruser", form)
       .then((res) => {
@@ -44,7 +39,7 @@ const Form = (props) => {
   };
   return (
     <>
-      <Typography> Your Taskboard App </Typography>
+      <h1 className="heading"> Your Taskboard App </h1>
       <div className="inputfield">
         <Box
           sx={{
